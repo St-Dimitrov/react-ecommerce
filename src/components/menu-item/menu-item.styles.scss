@@ -22,9 +22,9 @@
     }
   }
 
-  &.large {
-    height: 380px;
-  }
+  // &.large {
+  //   height: 380px;
+  // }
 
   &:first-child {
     margin-right: 7.5px;
@@ -32,6 +32,15 @@
 
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-item {
+      height: 200px;
+    }
+    .large {
+      height: 200px;
+    }
   }
 
   .background-image {
@@ -64,5 +73,18 @@
       font-weight: lighter;
       font-size: 16px;
     }
+  }
+}
+
+.large {
+  height: 380px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    height: 200px;
+  }
+  .large {
+    height: 200px;
   }
 }

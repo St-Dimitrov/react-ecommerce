@@ -1,5 +1,5 @@
 .collection-item {
-  width: 22%;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -19,6 +19,18 @@
     opacity: 0.7;
     position: absolute;
     top: 255px;
+    display: none;
+  }
+
+  &:hover {
+    .image {
+      opacity: 0.8;
+    }
+
+    .custom-button {
+      opacity: 0.85;
+      display: flex;
+    }
   }
 
   .collection-footer {
@@ -38,3 +50,24 @@
     }
   }
 }
+// @media only screen and (max-width: 800px) {
+//   .collection-item {
+//     width: 40%;
+//     &:hover {
+//       .image {
+//         opacity: unset;
+//       }
+//       button {
+//         opacity: unset;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 800px) {
+//   .custom-button {
+//     display: block;
+//     opacity: 0.9;
+//     min-width: unset;
+//     padding: 0 10px;
+//   }
+// }
